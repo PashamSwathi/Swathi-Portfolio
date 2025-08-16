@@ -1,4 +1,4 @@
-# Raghunath Reddy - Portfolio Website
+# Swathi Reddy - Portfolio Website
 
 This is my personal developer portfolio, showcasing my professional experience, skills, and featured projects. The website is fully responsive and built using HTML, CSS, and JavaScript with the Materialize CSS framework. It includes smooth navigation using ScrollSpy and dynamic typing animations powered by Typed.js.
 
@@ -20,7 +20,7 @@ This is my personal developer portfolio, showcasing my professional experience, 
 ## 🌐 Deployment
 This portfolio is hosted using **Vercel** and accessible at:
 
-👉 https://raghunath-portfolio.vercel.app/
+👉 
 
 ## 📁 Sections
 - About Me

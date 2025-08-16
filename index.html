@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Swathi Reddy Portfolio</title>
+
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css"/> 
+
+  <style>
+    html {
+      scroll-behavior: smooth; 
+    }
+    aside {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 250px;
+      height: 100vh;
+      background-color: #e0f2f1;
+      padding: 20px;
+      overflow-y: auto;
+    }
+    main {
+      margin-left: 270px;
+      padding: 40px;
+    }
+    .profile-pic {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      display: block;
+      margin: 0 auto 20px;
+    }
+    ul.table-of-contents li a.active {
+      color: #004d40 !important;
+      font-weight: bold;
+    }
+    .hero-section {
+      background-color: #5f9e94;
+      color: white;
+      padding: 60px 30px;
+    }
+    .hero-section .highlight {
+      background-color: #00796b;
+      padding: 5px 10px;
+      border-radius: 5px;
+      color: #fff;
+    }
+    .section h2 {
+      background-color: #00796b;
+      color: white;
+      padding: 10px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .btn-outline {
+      border: 2px solid #00796b;
+      padding: 10px 20px;
+      color: #00796b;
+      text-decoration: none;
+      display: inline-block;
+      margin-left: 10px;
+    }
+    .section-with-header {
+      margin-top: 0;
+      padding-top: 0;
+    }
+    
+    .section-heading {
+      background-color: #00796b;
+      color: white;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Sidebar -->
+<aside>
+  <img src="assets/img/profile.jpg" alt="Profile Photo" class="profile-pic"/>
+  <ul class="section table-of-contents">
+    <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+    <li><a href="#experience"><i class="fas fa-chart-line"></i> Experience</a></li>
+    <li><a href="#projects"><i class="fas fa-file-alt"></i> Projects</a></li>
+    <li><a href="#skills"><i class="fas fa-chart-bar"></i> Skills</a></li>
+    <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+    <li><a href="#resume"><i class="fas fa-folder"></i> Resume</a></li>
+  </ul>
+</aside>
+
+  <!-- Main Content --> 
+  <main>
+
+    <!-- HERO / ABOUT Section -->
+    <section id="intro" class="section scrollspy hero-section">
+      <div class="intro-content">
+        <h1>Hi, I'm <span class="highlight">Swathi Reddy.</span></h1>
+        <h4>A <span id="typed-text"></span></h4>
+        <p class="tagline">
+          Self-driven and passionate Software Engineer with over 5+ years of experience building scalable applications in finance and healthcare.
+          A quick starter with a curious mind, skilled in Java, Python, C#, Angular, React and AWS—dedicated to solving complex, real-world problems with clean and efficient code.
+        </p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/swathireddie" target="_blank" class="icon-button linkedin">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/PashamSwathi" target="_blank" class="icon-button github">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <br />
+        <a class="btn teal" href="#about">Read More</a>
+        <a class="btn white-text teal lighten-1" href="#contact">Contact Me</a>
+      </div>
+    </section>
+    
+
+    <!-- Second Section: About -->
+    <section id="about" class="section scrollspy about-section">
+      <h2 class="section-heading">ABOUT</h2>
+      <div class="container about-text">
+        <p>
+          I am a Computer Science graduate student at  University of North Texas with over 5+ years of professional experience in full-stack development. 
+          I thrive on building robust, scalable applications and  passionate about solving real-world problems through clean, efficient code.
+          My expertise includes Java, Python, Angular, and Spring Boot, with hands-on experience in architecting microservices and implementing CI/CD pipelines for enterprise-grade systems. 
+          I’ve delivered reliable and high performing solutions across finance and healthcare sectors.I am an AWS Certified Developer – Associate, with extensive experience in deploying 
+          and managing cloud-native applications. 
+        </p> 
+    
+        <p><strong><b>Languages:</b></strong> Java, Python, C++, JavaScript, TypeScript, HTML/CSS</p>
+        <p><strong><b>Databases:</b></strong> MySQL, PostgreSQL, MariaDB, , DynamoDB, MongoDB</p>
+        <p><strong><b>Frameworks:</b></strong> Springboot, Angular, React, Hibernate, Android </p>
+        <p><strong><b>Tools & Technologies:</b></strong> Intellj, Visual Studio Code, GitHub Copilot, Git, Docker, AWS, JIRA</p>
+      </div>
+    </section>
+    
+    
+ <!-- EXPERIENCE -->
+<section id="experience" class="section scrollspy experience-section">
+  <h2 class="section-heading">EXPERIENCE</h2>
+
+  <!-- Capital One -->
+  <div class="experience-card z-depth-1">
+    <h5><strong>Capital One</strong> <span class="role grey-text text-darken-1">– Software Developer</span></h5>
+    <ul class="browser-default">
+      <li>Designed cloud-native microservices for digital banking and KYC using <strong>Java 21</strong>, <strong>Spring Boot</strong>, <strong>Spring Cloud</strong>, <strong>Kafka</strong>, and <strong>MariaDB</strong>, processing over 5M transactions.</li>
+      <li>Containerized services using <strong>Docker</strong> and deployed them on <strong>AWS EC2</strong>, orchestrated via <strong>Kubernetes</strong>, and managed with <strong>ArgoCD</strong> and <strong>GitOps</strong> workflows.</li>
+      <li>Built secure integrations using <strong>OAuth2</strong>, <strong>JWT</strong>, <strong>LDAP</strong>, and <strong>Kong API Gateway</strong> to ensure role-based access control and service-level security.</li>
+      <li>Developed <strong>GraphQL APIs</strong> to enable client-driven data fetching, eliminating over-fetching and enhancing front-end performance by 35%.</li>
+    </ul>
+    <p class="duration grey-text text-darken-2">Jan 2024 – Present | Dallas, TX</p>     
+  </div>
+
+  <!-- Accenture -->
+  <div class="experience-card z-depth-1">
+    <h5><strong>Accenture </strong> <span class="role grey-text text-darken-1">– Application Development Associate</span></h5>
+    <ul class="browser-default">
+      <li>Developed and optimized backend services using <strong>Java 17</strong>, <strong>Spring Boot</strong>, <strong>MySQL</strong>, and <strong>Node.js</strong>, reducing latency by 30% through stored procedure tuning and query optimization.</li>
+      <li>Implemented <strong>RESTful APIs</strong> using <strong>Spring Boot</strong> and <strong>Node.js</strong>, with <strong>NPM</strong> and <strong>DynamoDB</strong> integration, improving real-time authentication and enrollment features by 25%.</li>
+      <li>Automated CI/CD workflows using <strong>Jenkins</strong> and <strong>AWS CodePipeline</strong>, reducing deployment time by 60% and ensuring zero-downtime updates.</li>
+      <li>Collaborated in <strong>Agile/Scrum</strong> teams using <strong>JIRA</strong> for sprint planning, backlog grooming, and release coordination.</li>
+    </ul>
+    <p class="duration grey-text text-darken-2">Aug 2021 – Dec 2022 | Hyderabad, India</p>
+  </div>
+
+  <!-- Gainwell Technologies -->
+  <div class="experience-card z-depth-1">
+    <h5><strong>Gainwell Technologies</strong> <span class="role grey-text text-darken-1">– Software Developer</span></h5>
+    <ul class="browser-default">
+      <li>Designed and developed scalable Medicaid and healthcare applications using <strong>Vue.js</strong>, <strong>Angular</strong>, <strong>Spring Boot</strong>, and <strong>REST/SOAP APIs</strong>, integrating external platforms like <strong>MMIS</strong>, <strong>EHR</strong>, and <strong>payer systems</strong> in compliance with <strong>HIPAA</strong> and <strong>CMS</strong> standards.</li>
+      <li>Implemented secure microservices for claims processing, eligibility checks, and provider management using <strong>Spring Boot</strong>, <strong>Spring MVC</strong>, <strong>Spring Data JPA</strong>, and <strong>PostgreSQL</strong>, with real-time healthcare data integration via <strong>HL7</strong> and <strong>FHIR</strong>.</li>
+      <li>Modernized legacy mainframe-based Medicaid systems by leading the migration to <strong>cloud-native microservices architecture</strong> using modern Java frameworks and <strong>Azure DevOps best practices</strong>.</li>
+      <li>Designed, deployed, and managed production-grade applications on <strong>Microsoft Azure</strong> using <strong>Azure App Services</strong>, <strong>Azure Functions</strong>, <strong>Blob Storage</strong>, and <strong>Azure DevOps</strong>, ensuring high availability and security.</li>
+    </ul> 
+    <p class="duration grey-text text-darken-2">Jun 2019 – Jul 2021 | Banglore, India</p> 
+  </div> 
+</section>
+
+<!-- Project Section -->
+<section id="projects" class="section scrollspy project-section">
+  <h2 class="section-heading">PROJECTS</h2>
+
+  <div class="projects-container">
+
+    <a href="https://github.com/PashamSwathi/Banking-Application" target="_blank" class="project-card">
+      <img src="assets/img/project1.jpg" alt="Banking Application">
+      <h5>Banking Application</h5>
+      <p>A secure online banking system with transaction and user management features.</p>
+    </a>
+
+    <a href="https://github.com/PashamSwathi/Face-Recognition-using-AWS" target="_blank" class="project-card">
+      <img src="assets/img/project2.jpg" alt="Face Recognition using AWS">
+      <h5>Face Recognition using AWS</h5>
+      <p>Face recognition system using AWS Rekognition API with real-time image analysis.</p>
+    </a>
+
+    <a href="https://github.com/PashamSwathi/Real-Time-Chat-Application" target="_blank" class="project-card">
+      <img src="assets/img/project3.jpg" alt="Chat App">
+      <h5>Real-time Chat Application</h5>
+      <p>A responsive web chat app with WebSockets for real-time communication.</p>
+    </a>
+
+    <a href="https://github.com/PashamSwathi/Payroll-Management-System" target="_blank" class="project-card">
+      <img src="assets/img/project4.jpg" alt="Payment System">
+      <h5>Payment Management System</h5>
+      <p>Automated payroll system for employee salary and tax management.</p>
+    </a>
+
+    <a href="https://github.com/PashamSwathi/Weather-Forecasting-using-Python" target="_blank" class="project-card">
+      <img src="assets/img/project5.jpg" alt="Weather Forecasting">
+      <h5>Weather Forecasting using Python</h5>
+      <p>It displays the weather prediction using Wttr</p>
+    </a>
+
+  </div>
+</section>
+
+
+  <!-- SKILLS -->
+<section id="skills" class="section scrollspy skills-section">
+  <h2 class="section-heading">SKILLS</h2>
+
+  <div class="skills-grid">
+
+    <div class="skills-column">
+      <div class="skills-header green">Software Development</div>
+      <ul class="browser-default">
+        <li>Data Structures and Algorithms</li>
+        <li>Object Oriented Programming</li>
+        <li>High-Level Design (HLD)</li>
+        <li>API Integration</li>
+        <li>Agile Methodologies</li>
+        <li>Microservices Architecture</li>
+        <li>Design Patterns</li>
+        <li>Clean Architecture</li>
+        <li>Test-Driven Development</li>
+        <li>SAFE Agile Framework</li>
+        <li>CI/CD Pipelines</li>
+      </ul>
+    </div>
+
+    <div class="skills-column">
+      <div class="skills-header green">Languages/Frameworks</div>
+      <ul class="browser-default">
+        <li>Java (Core Java, Java EE)</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>HTML, CSS</li>
+        <li>C++</li>
+        <li>Spring Boot</li>
+        <li>Spring MVC</li>
+        <li>Spring Security</li>
+        <li>Spring Data JPA</li>
+        <li>Spring Cloud</li>
+        <li>AngularJs</li>
+        <li>ReactJS</li>
+        <li>Hibernate</li>
+        <li>JUnit</li>
+        <li>Maven</li>
+      </ul>
+    </div>
+
+    <div class="skills-column">
+      <div class="skills-header green">Technologies & Infrastructure</div>
+      <ul class="browser-default">
+        <li>AWS, Azure </li>
+        <li>Docker, Kubernetes</li>
+        <li>Log Explorer, Log Rocket</li>
+        <li>Jenkins</li>
+        <li>CI/CD</li>
+        <li>Prometheus, Grafana</li>
+        <li>REST API</li>
+        <li>MySQL, PostgreSQL</li>
+        <li>MongoDB, Elasticsearch</li>
+        <li>Firebase</li>
+        <li>RabitMQ, Kafka</li> 
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+   <!-- EDUCATION -->
+<!-- EDUCATION -->
+<section id="education" class="section scrollspy">
+  <h2 class="section-heading">EDUCATION</h2>
+
+  <div class="education-container">
+
+    <!-- Master's -->
+    <div class="edu-card">
+      <h5 class="edu-title">University of North Texas</h5>
+      <p><strong><b>Degree:</b></strong> Master of Science in Data Science</p>
+      <p><strong><b>Relevant Coursework:</b></strong></p>
+      <ul class="browser-default">
+        <li>Algorithms</li>
+        <li>Machine Learning</li>
+        <li>Artificial Intelligence</li>
+        <li>Software Engineering</li>
+        <li>Operating Systems</li>
+        <li>Cloud Computing</li>
+        <li>Database Management Systems</li>
+      </ul>
+    </div>
+
+    <!-- Bachelor's -->
+    <div class="edu-card">
+      <h5 class="edu-title">Jawaharlal Nehru Technological University </h5>
+      <p><strong><b>Degree:</b></strong> Bachelor of Technology in Computer Science and Engineering</p>
+      <p><strong><b>Relevant Coursework:</b></strong></p>
+      <ul class="browser-default">
+        <li>Data Structures and Algorithms</li>
+        <li>Web Technologies</li> 
+        <li>Compiler Design</li> 
+        <li>Database Management Systems</li>
+        <li>Computer Networks</li>
+        <li>Operating Systems</li>
+      </ul> 
+    </div>
+
+    <!-- Certifications --> 
+    <div class="edu-card">
+      <h5 class="edu-title text-center">Certifications</h5>
+      <ul class="browser-default">
+        <li>AWS Certified Developer – Associate – AWS</li>
+        <li>Programming, DataStructures and Algorithms Using Python by NPTEL</li>
+        <li>Problem Solving – HackerRank</li>
+        <li> IntroductiontoArtificial Intelligence by IBM </li>
+        <li>Python Bootcamp 2019 Build 15 working application sand Games by Udemy</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!--Contact Section -->
+<section id="contact" class="section scrollspy">
+  <h2 class="section-heading">CONTACT</h2>
+  <div class="contact-item">
+    <div class="icon-circle"><i class="fas fa-phone"></i></div>
+    <span>+1 682-681-7763</span>
+  </div>
+  <div class="contact-item">
+    <div class="icon-circle"><i class="fas fa-envelope"></i></div>
+    <span>swathip1712@gmail.com</span>
+  </div>
+  <div class="contact-item"> 
+    <div class="icon-circle github"><i class="fab fa-github"></i></div>
+    <span><a href="https://github.com/PashamSwathi" target="_blank">github.com/PashamSwathi</a></span>
+  </div>
+  <div class="contact-item">
+    <div class="icon-circle linkedin"><i class="fab fa-linkedin-in"></i></div>
+    <span><a href="https://linkedin.com/in/swathireddie" target="_blank">linkedin.com/in/swathireddie</a></span>
+  </div>
+
+
+    <!-- RESUME -->
+<section id="resume" class="section scrollspy">
+  <h2 class="section-heading">RESUME</h2>
+  <a href="Swathi_Resume.pdf" download class="btn teal">Download Resume</a>
+</section>
+
+
+  </main>
+
+  <!-- JS Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const scrollElems = document.querySelectorAll('.scrollspy');
+      M.ScrollSpy.init(scrollElems, {
+        scrollOffset: 50
+      });
+
+      var options = {
+        strings: [" Software Developer", " Fast Learner", "  Problem Solver"],
+        typeSpeed: 60,
+        backSpeed: 30,
+        backDelay: 2000,
+        loop: true
+      };
+      new Typed('#typed-text', options);
+    });
+  </script>
+</body>  
+</html>  

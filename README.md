@@ -3,7 +3,7 @@
 This is my personal developer portfolio, showcasing my professional experience, skills, and featured projects. The website is fully responsive and built using HTML, CSS, and JavaScript with the Materialize CSS framework.It includes smooth navigation using ScrollSpy and dynamic typing animations powered by Typed.js.  
 
 ## 🚀 Features
-- Fully responsive design
+- Fully responsive design 
 - Clean and modern UI using Materialize CSS
 - ScrollSpy-enabled sidebar navigation
 - Dynamic hero section with typing animation

@@ -13,7 +13,7 @@ This is my personal developer portfolio, showcasing my professional experience, 
 
 ## 🛠️ Tech Stack
 - HTML5
-- CSS3 (Materialize CSS)
+- CSS3 (Materialize CSS) 
 - JavaScript
 - Typed.js
 
